@@ -1,0 +1,7 @@
+{
+    "name": "AUWM",
+    "startOnBoot": true,
+    "isApp": false,
+    
+    "release": 2
+}

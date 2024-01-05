@@ -1,0 +1,7 @@
+{
+  "name": "Write",
+  "startOnBoot": false,
+  "isApp": true,
+  
+  "release": 1
+}

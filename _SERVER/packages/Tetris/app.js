@@ -1,0 +1,1 @@
+document.currentScript.package.createWindow(`<div id="%window%Body" class="windowBody blur" style="padding:0;"><iframe src="https://dionyziz.com/graphics/canvas-tetris/" style="width:100%;height:calc(100% - 5px);"></iframe></div>`, { minimizable: true, titleBar: "Default", title: "Tetris", startingDimensions: [340,665] });
