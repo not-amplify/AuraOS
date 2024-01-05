@@ -1,0 +1,96 @@
+::-webkit-scrollbar-thumb { border-radius: 10px; border: 0.5px solid rgb(90,90,90); box-shadow: rgba(0,0,0,0.2) 0px 1px 1px; background: rgb(80,80,80); }
+
+a { color: #c8a2eb; }
+
+#applications { border-radius: 0 6px 0 0; }
+
+#applications, .dock, .contextMenu {
+  color: white;
+  box-shadow: rgba(0,0,0,0.35) 0px 0px 24px;
+  background: rgba(80,80,80,0.5);
+  backdrop-filter: blur(20px);
+}
+
+*[disabled], *::placeholder { color: rgba(255,255,255,0.3); }
+
+.contextMenuSeparator { border-top: 1px solid rgba(0,0,0,0.4); }
+.contextMenu { border-radius: 6px; }
+
+.window {
+  border-radius: 6px;
+  color: white;
+  box-shadow: rgba(0,0,0,0.35) 0px 0px 24px;
+}
+.windowTitleBar {
+  border-radius: 6px 6px 0 0;
+  border-bottom: 0.5px solid rgb(90,90,90);
+  background: linear-gradient(0deg, rgb(54,56,58), rgb(65,67,69));
+}
+.windowBody {
+  background: rgb(48,49,51);
+  border-radius: 0 0 6px 6px;
+}
+.windowAction img:hover { filter: brightness(50%); }
+.windowAction img:active { filter: brightness(30%); }
+
+input, button, textarea, select, .progressBarOuter, list, .menubarButton {
+  background: rgb(80,80,80);
+  color: white;
+  box-shadow: rgba(0,0,0,0.2) 0px 1px 1px;
+  border-radius: 6px;
+  padding: 4px 6px;
+  border: 0.5px solid rgb(90,90,90);
+  font-weight: 500;
+}
+
+@keyframes focus {
+  from { background: rgb(20,124,239); }
+  to { background: rgb(80,80,80); }
+}
+
+button:focus:not(:hover):not(:active), input[type="range"]:focus, select:focus:not(option):not(:hover):not(:active) {
+  animation-name: focus;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+#appSearch { background: rgba(240,240,240,0.4); border: none; }
+
+#systemButton { border: none; background-color: transparent; box-shadow: none; }
+
+option {
+  color: black;
+  font-weight: 500;
+}
+button[disabled], input[disabled], textarea[disabled], select[disabled] { box-shadow: none; }
+.chboxContainer input:checked ~ .checkmark { color: white !important; }
+.checkmark {
+  background: rgb(80,80,80);
+  border-radius: 6px;
+  border: 0.5px solid rgb(90,90,90);
+  box-shadow: rgba(0,0,0,0.2) 0px 1px 1px;
+  color: transparent !important;
+  padding: 4px;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+}
+input[type="range"] { height: 2px; }
+input[type="range"]::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: rgb(80,80,80);
+  border: 0.5px solid rgb(90,90,90);
+  box-shadow: rgba(0,0,0,0.2) 0px 1px 1px;
+}
+.menubar { border-bottom: 0.5px solid rgb(90,90,90); }
+.menubarObject { border-radius: 6px; }
+
+.menubarButton:hover, button:hover:not([disabled]), .checkmark:hover:not([disabled]), select:hover:not([disabled]), input[type="range"]::-webkit-slider-thumb:hover, ::-webkit-scrollbar-thumb:hover, item:hover { background: linear-gradient(0deg, rgb(0,104,219), rgb(20,124,239)); color: white; }
+.menubarButton:active, button:active:not([disabled]), .checkmark:active:not([disabled]), select:active:not([disabled]), input[type="range"]::-webkit-slider-thumb:active, ::-webkit-scrollbar-thumb:active, item:focus { background: linear-gradient(0deg, rgb(0,74,189), rgb(0,94,199)); color: white; }
+
+.contextMenuSelection:hover:not([disabled]), .progressBarInner { background: rgb(20,124,239); color: white; }
+.contextMenuSelection:active:not([disabled]) { background: rgb(0,104,219); color: white; }
